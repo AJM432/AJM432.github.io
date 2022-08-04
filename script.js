@@ -1,10 +1,16 @@
-window.setInterval(load_dots, 1000);
+window.setInterval(load_unicode, 1000);
 
-var num_dots = 0;
-function load_dots() {
-    num_dots = (num_dots + 1) % 4;
-    var new_text = 'Website Under Construction' + '.'.repeat(num_dots);
-    document.getElementById('status').innerHTML = new_text;
+var curr_symbol_pos = -1;
+
+function load_unicode() {
+    const unicode_objects =
+    [
+        '| 0%',
+        '|| 5%',
+        '|||||| 25%',
+        '||||||||||||||||||||| 100%'
+    ]
+    curr_symbol_pos = (curr_symbol_pos+1) % (unicode_objects.length);
+
+    document.getElementById('unicode').innerHTML = unicode_objects[curr_symbol_pos];
 }
-
-load_dots();
