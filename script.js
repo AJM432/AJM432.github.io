@@ -14,3 +14,19 @@ function load_unicode() {
 
     document.getElementById('unicode').innerHTML = unicode_objects[curr_symbol_pos];
 }
+
+// const h1_array = document.getElementsByTagName('h1');
+// for (var i=0; i < h1_array.length; i++) {
+//     h1_array[i].addEventListener('mouseover', brightenImage);
+//     h1_array[i].addEventListener('mouseout', lightenImage);
+// }
+
+// function brightenImage() {
+//     about_section = document.getElementById('about');
+//     document.getElementById("about").style.filter = "brightness(100%)";
+// }
+
+// function lightenImage() {
+//     about_section = document.getElementById('about');
+//     document.getElementById("about").style.filter = "brightness(80%)";
+// }

@@ -7,8 +7,22 @@ html, body {
   overflow: auto;
   background-color: rgb(30, 30, 30);
   font-family: Monospace, sans-serif;
-  color: turquoise;
+  color: white;
   text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: normal;
+  color: turquoise;
+}
+
+h1:hover{
+  font-weight: bold;
+}
+
+.rotate:hover{
+  transform: rotate(8deg);
 }
 
 section p {
@@ -58,19 +72,29 @@ section p {
 }
 
 #about {
+  text-align: left;
   height: 100vh;
-  background: black;
+  padding: 5rem;
+  background-image: url('./img/abstract-blocks.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   box-sizing: border-box;
 }
 
 #projects {
   height: 100vh;
-  background: white;
+  background: black;
+  color: white;
   box-sizing: border-box;
 }
 
 #contact {
   height: 100vh;
   background: purple;
+  color: yellow;
   box-sizing: border-box;
+}
+
+footer {
+  color: white;
 }
