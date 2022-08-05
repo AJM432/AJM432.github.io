@@ -6,8 +6,8 @@ body {
   width: 100%;
   overflow: auto;
   background-color: rgb(30, 30, 30);
-  font-family: Arial, sans-serif;
-  color: lightblue;
+  font-family: Monospace, sans-serif;
+  color: turquoise;
   text-align: center;
 }
 
@@ -18,24 +18,28 @@ body {
 }
 
 .nav-item {
-  padding: 10px;
-  margin: 10px;
+  padding: 1% 2%;
+  margin: 0%;
   display: flex;
-
   justify-content: center;
-
   align-items: center;
-
-  height: 15px;
   color: white;
 }
 
 .topnav a:hover {
   color: turquoise;
-  background-color: gray;
-  border-radius: 10%;
+}
+
+.nav-img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 0px 10px;
+  width: 40px;
+  height: auto;
+
 }
 
 #unicode {
-  color: purple;
+  color: white;
 }
