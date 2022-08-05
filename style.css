@@ -1,14 +1,41 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    background-color: rgb(10, 10, 10);
-    font-family: Arial, sans-serif;
-    color: lightblue;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgb(30, 30, 30);
+  font-family: Arial, sans-serif;
+  color: lightblue;
+  text-align: center;
+}
+
+.topnav {
+  overflow: hidden;
+  display: flex;
+  justify-content: right;
+}
+
+.nav-item {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  height: 15px;
+  color: white;
+}
+
+.topnav a:hover {
+  color: turquoise;
+  background-color: gray;
+  border-radius: 10%;
 }
 
 #unicode {
-    color: limegreen;
+  color: purple;
 }
