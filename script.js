@@ -13,18 +13,19 @@
 //     document.getElementById('unicode').innerHTML = unicode_objects[curr_symbol_pos];
 // }
 
-// const h1_array = document.getElementsByTagName('h1');
-// for (var i=0; i < h1_array.length; i++) {
-//     h1_array[i].addEventListener('mouseover', brightenImage);
-//     h1_array[i].addEventListener('mouseout', lightenImage);
-// }
+// used to brighten background image when user hovers over any h1 tag
+const h1_array = document.getElementsByTagName('h1');
+for (var i=0; i < h1_array.length; i++) {
+    h1_array[i].addEventListener('mouseout', brightenImage);
+    h1_array[i].addEventListener('mouseover', lightenImage);
+}
 
-// function brightenImage() {
-//     about_section = document.getElementById('about');
-//     document.getElementById("about").style.filter = "brightness(100%)";
-// }
+function brightenImage() {
+    about_section = document.getElementById('about');
+    document.getElementById("about").style.filter = "none";
+}
 
-// function lightenImage() {
-//     about_section = document.getElementById('about');
-//     document.getElementById("about").style.filter = "brightness(80%)";
-// }
+function lightenImage() {
+    about_section = document.getElementById('about');
+    document.getElementById("about").style.filter = "brightness(80%)";
+}
