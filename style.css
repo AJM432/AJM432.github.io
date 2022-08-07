@@ -66,13 +66,13 @@ section p {
   justify-content: left;
   margin-left: auto;
   position: fixed;
-
 }
 
 .icon {
   padding: 20px 20px;
   width: 40px;
   height: auto;
+  z-index: 1;
 
 }
 
