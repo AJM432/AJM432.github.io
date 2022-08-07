@@ -12,9 +12,15 @@ html, body {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 5vw;
   font-weight: normal;
   color: turquoise;
+}
+
+h2 {
+  font-size: 2.5vw;
+  font-weight: bold;
+  color: white;
 }
 
 h1:hover{
@@ -56,10 +62,10 @@ section p {
 }
 
 .nav-img {
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  display: flex;
+  justify-content: left;
   margin-left: auto;
+  position: fixed;
 
 }
 
