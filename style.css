@@ -79,14 +79,16 @@ section p {
 section {
   text-align: left;
   padding: 5rem;
-  height: 100vh;
+  min-height: 100vh;
+  flex:1;
   box-sizing: border-box;
 }
 
 #about {
-  background-image: url('./img/abstract-blocks.jpg');
+  /* background-image: url('./img/abstract-blocks.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 100%; */
+  background: black;
 }
 
 #projects {
@@ -95,11 +97,28 @@ section {
 }
 
 #contact {
-  background: purple;
-  color: yellow;
+  background: black;
+  color: white;
 }
 
 footer {
   color: white;
   font-size: 12px;
+}
+
+#projects .img-gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+#projects .img-gallery > * {
+  margin: 1em 1em;
+  width: 25vw;
+  height: auto;
+}
+
+#projects .img-gallery > *:hover {
+  zoom: 1.01;
+  -moz-transform: scale(1.01);
+  opacity: 0.5;
 }
