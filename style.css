@@ -59,6 +59,8 @@ section p {
 
 .topnav a:hover {
   color: turquoise;
+  border-radius: 15px;
+  background: white;
 }
 
 .nav-img {
@@ -112,6 +114,7 @@ footer {
   justify-content: center;
 }
 #projects .img-gallery > * {
+
   margin: 1em 1em;
   width: 25vw;
   height: auto;
