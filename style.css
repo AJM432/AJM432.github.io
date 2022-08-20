@@ -35,17 +35,19 @@ section p {
 
 .topnav {
   /* overflow: hidden; */
+  background-color: #4d6979;
   display: flex;
   justify-content: right;
   width: 100%;
-  height: 10vh;
+  height: 7vh;
   position: fixed;
+  z-index: 0;
 }
 
 .nav-item {
   text-decoration: none;
 
-  margin: 2% 2%;
+  margin: 1% 1%;
   padding: 10px;
   display: flex;
   justify-content: center;
