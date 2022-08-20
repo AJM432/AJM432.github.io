@@ -75,7 +75,7 @@ section p {
   margin: 20px 20px;
   width: 40px;
   height: 40px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .icon:hover {
