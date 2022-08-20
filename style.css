@@ -5,30 +5,24 @@ html, body {
   height: 100%;
   width: 100%;
   overflow: auto;
-  background-color: rgb(0, 0, 0);
-  font-family: Monospace, sans-serif;
+  font-family: 'JetBrains Mono';font-size: 18px;
+  background-color: rgb(24, 24, 24);
   color: white;
   text-align: center;
 }
+
 
 h1 {
   font-size: 5vw;
   font-weight: normal;
   color: turquoise;
+  margin: 0 auto;
 }
 
 h2 {
-  font-size: 2.5vw;
+  font-size: 1.5vw;
   font-weight: bold;
-  color: white;
-}
-
-h1:hover{
-  font-weight: bold;
-}
-
-.rotate:hover{
-  transform: rotate(8deg);
+  color: lightgray;
 }
 
 section p {
@@ -49,8 +43,8 @@ section p {
 .nav-item {
   text-decoration: none;
   
-  padding: 2% 2%;
-  margin: 0%;
+  margin: 2% 2%;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,11 +65,17 @@ section p {
 }
 
 .icon {
-  padding: 20px 20px;
+  cursor:pointer;
+  color: #d7e8ce;
+  /* padding: 5px 5px; */
+  margin: 20px 20px;
   width: 40px;
-  height: auto;
+  height: 40px;
   z-index: 1;
+}
 
+.icon:hover{
+  color: turquoise;
 }
 
 section {
@@ -90,22 +90,25 @@ section {
   /* background-image: url('./img/abstract-blocks.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%; */
-  background: black;
 }
 
 #projects {
-  background: black;
   color: white;
 }
 
 #contact {
-  background: black;
   color: white;
+
+  min-height: 0vh;
 }
 
 footer {
   color: white;
-  font-size: 12px;
+  margin: auto 0;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  color: #495660;
 }
 
 #projects .img-gallery {
@@ -124,4 +127,22 @@ footer {
   zoom: 1.01;
   -moz-transform: scale(1.01);
   opacity: 0.5;
+}
+
+div ul.contact-links {
+  list-style: none;
+}
+
+div ul.contact-links li{
+ display:inline-block;
+}
+
+div.into-summary {
+  margin-right: 0;
+  color: lightgray;
+  line-height: 2;
+  margin: 0 auto;
+  float: left;
+  text-align: left;
+  display: inline-block;
 }
