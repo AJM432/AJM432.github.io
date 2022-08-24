@@ -1,3 +1,9 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   scroll-behavior: smooth;
@@ -32,7 +38,6 @@ section p {
   padding: 10px;
 }
 
-
 .topnav {
   /* overflow: hidden; */
   display: flex;
@@ -45,9 +50,8 @@ section p {
 
 .nav-item {
   text-decoration: none;
-
-  margin: 1% 1%;
-  padding: 10px;
+  margin: 20px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,12 +62,10 @@ section p {
 
 .topnav a:hover {
   color: turquoise;
-  border-radius: 15px;
-  /* background: white; */
+  background: black;
 }
 
 .nav-img {
-
   width: 40px;
   height: 40px;
   display: flex;
@@ -168,6 +170,12 @@ div.intro-summary {
  color: #ea4335;
 }
 
-.fa-dev {
- color: black;
+.fa-hashnode {
+ color: #2962FF;
+}
+
+@media ( max-width : 400px) {
+  .disappear-mobile {
+      display: none;
+  }
 }
