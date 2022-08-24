@@ -178,4 +178,8 @@ div.intro-summary {
   .disappear-mobile {
       display: none;
   }
+
+  .intro-summary p{
+    text-align: center;
+  }
 }
