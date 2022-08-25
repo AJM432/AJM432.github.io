@@ -21,14 +21,14 @@ body {
 
 
 h1 {
-  font-size: 5vw;
+  font-size: 3rem;
   font-weight: normal;
   color: turquoise;
   margin: 0 auto;
 }
 
 h2 {
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   font-weight: bold;
   color: lightgray;
 }
@@ -36,6 +36,7 @@ h2 {
 section p {
   margin: 0;
   padding: 10px;
+  font-size: 1rem;
 }
 
 .topnav {
@@ -174,12 +175,9 @@ div.intro-summary {
  color: #2962FF;
 }
 
-@media ( max-width : 400px) {
+@media ( max-width : 500px) {
   .disappear-mobile {
       display: none;
   }
 
-  .intro-summary p{
-    text-align: center;
-  }
 }
