@@ -16,7 +16,6 @@ body {
   font-size: 18px;
   background-color: rgb(24, 24, 24);
   color: white;
-  text-align: center;
 }
 
 
@@ -88,21 +87,25 @@ section p {
 
 section {
   text-align: left;
-  padding: 5rem;
   min-height: 100vh;
   flex: 1;
   box-sizing: border-box;
+  margin-bottom: 3vw;
+}
+
+section h1 {
+  text-align: center;
 }
 
 #about {
+  padding: 5rem;
   /* background-image: url('./img/abstract-blocks.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%; */
 }
-
-#projects {
-  color: white;
-}
+ #about h1{
+  text-align: left;
+ }
 
 #contact {
   color: white;
@@ -120,16 +123,26 @@ footer {
 }
 
 #projects .img-gallery {
-  display: flex;
+  /* display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: center; */
+  padding: 0px;
 }
 
-#projects .img-gallery>* {
-
-  margin: 1em 1em;
-  width: 25vw;
+#projects .img-gallery img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
   height: auto;
+/* 
+  margin: 1em 1em;
+  width: 25rem;
+  height: auto; */
+}
+
+#projects img {
+  padding: 1rem;
 }
 
 #projects .img-gallery>*:hover {
@@ -161,7 +174,6 @@ div.intro-summary {
 .fa-github {
   color: white;
 }
-
 
 .fa-linkedin {
   color: #0077b5;
