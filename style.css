@@ -86,19 +86,15 @@ section p {
 }
 
 section {
-  text-align: left;
   min-height: 100vh;
   flex: 1;
   box-sizing: border-box;
   margin-bottom: 3vw;
 }
 
-section h1 {
-  text-align: center;
-}
-
 #about {
-  padding: 5rem;
+  padding: 100px;
+  /* padding: 5rem; */
   /* background-image: url('./img/abstract-blocks.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%; */
@@ -122,6 +118,10 @@ footer {
   color: #495660;
 }
 
+#projects {
+  text-align: center;
+}
+
 #projects .img-gallery {
   /* display: flex;
   flex-flow: row wrap;
@@ -133,7 +133,7 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 95%;
+  width: 50%;
   height: auto;
 /* 
   margin: 1em 1em;
@@ -142,7 +142,7 @@ footer {
 }
 
 #projects img {
-  padding: 1rem;
+  padding: 0px;
 }
 
 #projects .img-gallery>*:hover {
@@ -190,6 +190,18 @@ div.intro-summary {
 @media ( max-width : 500px) {
   .disappear-mobile {
       display: none;
+  }
+  #about h1, p{
+    text-align: center;
+  }
+
+  #projects .img-gallery img {
+
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
   }
 
 }
