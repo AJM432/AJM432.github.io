@@ -145,7 +145,7 @@ section  p {
   }
   
   #projects .img-gallery>*:hover {
-    transition: 0.2s;
+    /* transition: 0.2s; */
     zoom: 1.01;
     -moz-transform: scale(1.01);
     opacity: 0.5;
