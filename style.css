@@ -183,6 +183,14 @@ section  p {
   }
   
   @media ( max-width : 500px) {
+    
+    html, body {
+      overflow-x: hidden;
+      }
+    body {
+      position: relative;
+      }
+
     .disappear-mobile {
         display: none;
     }
