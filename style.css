@@ -101,7 +101,7 @@ section  p {
   }
   
   section {
-    min-height: 100vh;
+    min-height: 50vh;
     margin-bottom: 3vw;
   }
   
@@ -127,9 +127,20 @@ section  p {
     border: none;
     color: #495660;
   }
+
+  #experience {
+    padding-top: 50px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  }
   
   #projects {
-    text-align: center;
+    /* text-align: center; */
+  padding-top: 50px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  padding-left: 100px;
   }
   
  .img-gallery {
@@ -182,7 +193,7 @@ section  p {
    color: #2962FF;
   }
   
-  @media ( max-width : 500px) {
+  @media ( max-width : 700px) {
     
     html, body {
       overflow-x: hidden;
@@ -194,8 +205,18 @@ section  p {
     .disappear-mobile {
         display: none;
     }
+    h1 {
+    font-size: 40px;
+  }
+    h2 {
+    font-size: 30px;
+  }
+    li {
+    font-size: 18px;
+  }
     #about h1, p{
       text-align: center;
+      padding-left: 0px;
     }
 
     .intro-summary {
