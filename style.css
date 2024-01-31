@@ -21,6 +21,23 @@ body {
   color: rgb(187, 187, 187);
 }
 
+.break {
+  margin: 0px;
+  padding: 2px;
+}
+
+.parallax {
+  background-image: url("https://www.bhmpics.com/downloads/black-abstract-background-Wallpapers/22.3338286.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
 
 h1 {
   font-size: 3rem;
@@ -296,24 +313,11 @@ div ul.contact-links li {
     margin-left: 0px;
     margin-right: 0px;
   }
+  .parallax {
+    background-image: none;
+  }
 }
 
-.break {
-  margin: 0px;
-  padding: 2px;
-}
-
-.parallax {
-  background-image: url("https://www.bhmpics.com/downloads/black-abstract-background-Wallpapers/22.3338286.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-
-  min-height: 100vh;
-
-  display: flex;
-  flex-direction: column;
-}
 
 @media only screen and (max-device-width: 1366px) {
   .parallax-container {
