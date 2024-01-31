@@ -8,17 +8,23 @@
     <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
 
     <script src="https://kit.fontawesome.com/211b696185.js" crossorigin="anonymous"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js">
+  </script>
+  <script src="script.js"></script>
     <title>Alvin Matthew | Portfolio</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="./style.css">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
 </head>
 
-<body>
+<body onload="enterCommands()">
 
     <a href="/">
-        <img src="https://avatars.githubusercontent.com/u/49791407?v=4" alt="Logo AJM" class="nav-img icon"></img>
+        <img src="https://avatars.githubusercontent.com/u/49791407?v=4" alt="Logo AJM" class="nav-img icon" id="logo"></img>
     </a>
-    <nav class="topnav">
+    <nav class="topnav" id="navbar">
         <a href="#about" class="nav-item disappear-mobile">About</a>
         <a href="#experience" class="nav-item disappear-mobile">Experience</a>
         <a href="#projects" class="nav-item disappear-mobile">Projects</a>
@@ -27,13 +33,16 @@
 
     <div class="parallax">
     <section id="about">
+        <div id="terminal-wrapper">
+        </div>
+
         <div>
-            <h1>
+            <h1 id="name">
                 Alvin Matthew
             </h1>
         </div>
 
-        <p class="intro-summary">
+        <p class="intro-summary" id="description">
             I am a student at the University of Waterloo majoring
             in computer engineering and have a strong interest in building projects. I am excited to seek out new
             opportunities to learn and grow in my field.
@@ -73,7 +82,119 @@ automated this process</li>
             Projects
         </h1>
 
-        <div class="img-gallery">
+        <div class="project">
+            <div class="bubble-container">
+                <img src="https://user-images.githubusercontent.com/49791407/178154857-8f7ddbf2-ce2b-4cf7-83b7-dd323891ebdc.png" alt="Image">
+                <div class="project-content">
+                    <img src="https://user-images.githubusercontent.com/49791407/210035641-f62a010e-627c-4e4b-a758-2c360f1080b8.png">
+                <br>
+                <p>View any first-order differential equation of the form \(\frac{dy}{dx} = f(x, y)\) as a slope field.</p>
+                </div>
+                    <a href="https://github.com/AJM432/Differential-Equation-Visualizer">
+                        <i class="fab fa-github fa-2xl icon"></i>
+                    </a>
+            </div>
+        
+            <div class="bubble-container">
+                <img src="https://user-images.githubusercontent.com/49791407/186030712-4ba4775f-4b59-47c7-95b1-95e64ac51b4b.gif" alt="Image">
+                <div class="project-content">
+                <img src="https://user-images.githubusercontent.com/49791407/186008559-3df1f30c-fd2b-43e9-9b5a-d1902cfdab36.png">
+                <br>
+                <p>A 3d function grapher that allows for rotation and scaling of various mathematical functions.</p>
+                </div>
+                    <a href="https://github.com/AJM432/3d-Function-Grapher">
+                        <i class="fab fa-github fa-2xl icon"></i>
+                    </a>
+            </div>
+
+            <div class="bubble-container">
+                <video controls>
+                    <source src="resources/solar_synesthesia.mov" type="video/mp4">
+                </video>
+                <div class="project-content">
+                <img src="https://user-images.githubusercontent.com/49791407/210034549-7bfaa1bf-010d-4d73-9fed-8ce3aaf24121.png">
+                <br>
+                <p style="padding-left: 30px">Solar Synesthesia allows users to view songs as a solar system. The movement of the planets in the system is synced with the notes and instruments in the song, creating a visually engaging and interactive way to experience music.</p>
+                </div>
+                    <a href="https://github.com/AJM432/Solar-Synesthesia">
+                        <i class="fab fa-github fa-2xl icon"></i>
+                    </a>
+            </div>
+
+            <div class="bubble-container">
+                <img src="https://user-images.githubusercontent.com/49791407/165393737-55bfd6d3-2e3f-42f4-ab99-7a68a6fee351.gif" alt="Image">
+                <div class="project-content">
+                <img src="https://user-images.githubusercontent.com/49791407/186274074-e914364c-2f00-4714-b848-07bc9059eeb9.png">
+                <br>
+                <p>Displays bubble sort, selection sort, insertion sort and cocktail shaker sort with step by step iteration.</p>
+                </div>
+                    <a href="https://github.com/AJM432/Interactive-Sorting-Algorithms">
+                        <i class="fab fa-github fa-2xl icon"></i>
+                    </a>
+            </div>
+
+            <div class="bubble-container">
+                <img src="https://user-images.githubusercontent.com/49791407/165391132-9058ea45-daa2-44e1-a6b0-a1174996bfec.gif" alt="Image">
+                <div class="project-content">
+                <img src="https://user-images.githubusercontent.com/49791407/186054817-eafde350-7d1c-4bef-9ea4-9d9cf99cb190.png">
+                <br>
+                <p>Simulates the solar system using Newton's laws of gravitational motion.</p>
+                </div>
+                    <a href="https://github.com/AJM432/Solar-System-Simulator">
+                        <i class="fab fa-github fa-2xl icon"></i>
+                    </a>
+            </div>
+
+            <div class="bubble-container">
+                <img src="https://user-images.githubusercontent.com/49791407/185982203-2f0d3356-c55c-4a9d-a086-a22ee4b9b878.gif" alt="Image">
+                <div class="project-content">
+                <img src="https://user-images.githubusercontent.com/49791407/185980134-1a7b4c4b-f68b-4e9a-abc9-f02ce9786bf1.png">
+                <br>
+                <p>Explore the Mandelbrot set and uncover the beauty of hidden fractal patterns.</p>
+                </div>
+                    <a href="https://github.com/AJM432/Mandelbrot-Viewer">
+                        <i class="fab fa-github fa-2xl icon"></i>
+                    </a>
+            </div>
+
+            <div class="bubble-container">
+                <img src="https://user-images.githubusercontent.com/49791407/163589307-2b7e0575-63cb-4824-9abd-0b8e6167df97.gif" alt="Image">
+                <div class="project-content">
+                <img src="https://user-images.githubusercontent.com/49791407/186037770-d505c44c-3725-43bd-ba46-d08035277255.png">
+                <br>
+                <p>Simulates an elastic collision between two objects.</p>
+                </div>
+                    <a href="https://github.com/AJM432/Elastic-Collision-Simulation">
+                        <i class="fab fa-github fa-2xl icon"></i>
+                    </a>
+            </div>
+
+            <div class="bubble-container">
+                <img src="https://user-images.githubusercontent.com/49791407/162538729-7b177c0c-0764-4302-8a9a-05e22c6d638f.png" alt="Image">
+                <div class="project-content">
+                <img src="https://user-images.githubusercontent.com/49791407/185975164-4fa2c354-e457-4d10-8f5b-2feee0ad0cd7.png">
+                <br>
+                <p>A general purpose discord bot with prebuilt games and mathematical features.</p>
+                </div>
+                    <a href="https://github.com/AJM432/Discord-Bot">
+                        <i class="fab fa-github fa-2xl icon"></i>
+                    </a>
+            </div>
+
+            <div class="bubble-container">
+                <img src="https://user-images.githubusercontent.com/49791407/185830179-2f0eb006-b57c-4c2a-b367-e94b88a7fefa.gif" alt="Image">
+                <div class="project-content">
+                <img src="https://user-images.githubusercontent.com/49791407/185968545-e9f75d85-5f66-4174-9906-5149101e06f0.png">
+                <br>
+                <p>A clone of the popular game of 2048 written in pygame.</p>
+                </div>
+                    <a href="https://github.com/AJM432/2048-Clone">
+                        <i class="fab fa-github fa-2xl icon"></i>
+                    </a>
+            </div>
+        </div>
+
+        <!-- <div class="img-gallery">
             <a href="https://github.com/AJM432/Differential-Equation-Visualizer">
                 <img class="projectImage" src="https://user-images.githubusercontent.com/49791407/210035641-f62a010e-627c-4e4b-a758-2c360f1080b8.png"
                     alt="Github Project"></img>
@@ -118,7 +239,7 @@ automated this process</li>
                 <img class="projectImage" src="https://user-images.githubusercontent.com/49791407/185968545-e9f75d85-5f66-4174-9906-5149101e06f0.png"
                     alt="Github Project"></img>
             </a>
-        </div>
+        </div> -->
 
     </section>
 
@@ -150,7 +271,7 @@ automated this process</li>
 
     <footer>
         <p>
-            Built and designed by Alvin Matthew
+            © 2024 Alvin Matthew
         </p>
     </footer>
 </div>
