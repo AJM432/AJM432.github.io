@@ -14,11 +14,12 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  overflow: auto;
+  /* overflow: auto; */
   font-family: 'Futura';
   font-size: 18px;
-  background-color: rgb(34, 33, 33);
-  color: rgb(187, 187, 187);
+  /* background-color: rgb(34, 33, 33); */
+  background-color: rgb(0, 3, 68);
+  color: rgb(255, 255, 255);
 }
 
 .break {
@@ -27,7 +28,12 @@ body {
 }
 
 .parallax {
-  background-image: url("https://www.bhmpics.com/downloads/black-abstract-background-Wallpapers/22.3338286.jpg");
+  /* background-image: url("https://www.bhmpics.com/downloads/black-abstract-background-Wallpapers/22.3338286.jpg"); */
+  /* background-image: url("https://picjumbo.com/wp-content/uploads/dark-black-orange-3d-abstract-wallpaper-free-photo.jpg"); */
+  /* background-image: url("https://images.unsplash.com/photo-1620121692029-d088224ddc74?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+  /* background-image: url("https://images.unsplash.com/photo-1638272181967-7d3772a91265?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+  /* background-image: url("https://images.unsplash.com/photo-1637825891028-564f672aa42c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+  background-image: url("https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -38,10 +44,19 @@ body {
   flex-direction: column;
 }
 
+.text-gradient{
+  /* user-select: none; */
+  background-image: linear-gradient(to right, rgb(98, 0, 255), rgb(221, 199, 255));
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 h1 {
+  font-weight: 900;
   font-size: 3rem;
-  font-weight: normal;
+  /* font-weight: normal; */
   color: var(--theme);
   margin: 1 auto;
   text-align: center;
@@ -51,11 +66,24 @@ h2 {
   font-size: 1.5rem;
   font-weight: bold;
   color: lightgray;
+  text-align: center;
+}
+
+#experience h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(132, 71, 255);
+}
+
+#projects h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
 }
 
 .intro-summary {
   margin-right: 30%;
-  color: rgb(162, 162, 162);
+  color: rgb(255, 255, 255);
   line-height: 2;
   text-align: left;
 }
@@ -68,6 +96,9 @@ section p {
 
 .topnav {
   display:none;
+  backdrop-filter: blur(0.5rem);
+  padding-right: 10px;
+  padding-bottom: 30px;
   /* display: flex; */
   justify-content: right;
   width: 100%;
@@ -85,7 +116,7 @@ section p {
   align-items: center;
   color: rgb(0, 0, 0);
   border-radius: 15px;
-  background: rgb(109, 152, 201);
+  background: rgb(93, 169, 255);
 }
 
 .topnav a:hover {
@@ -155,11 +186,15 @@ footer {
 
 #experience {
   padding: 4rem;
-  padding-top: 0rem;
+  /* padding-top: 0rem; */
 }
 
 #projects {
   padding: 1rem;
+}
+
+#projects p{
+  font-size: 0.8rem;
 }
 
 #terminal-wrapper {
@@ -171,6 +206,7 @@ footer {
   border-style: solid;
   border-color: gray;
   padding: 10px;
+  margin: 10px;
 }
 #terminal-wrapper div:last-child::after {
   color: white;
@@ -198,6 +234,10 @@ footer {
 .project-content {
   display: flex;
   flex-direction: column;
+}
+
+.project-content img{
+  background-color: black;
 }
 
 .bubble-container {
@@ -269,6 +309,17 @@ div ul.contact-links li {
   color: #2962FF;
 }
 
+.fa-file-pdf {
+  margin: 20px;
+  color: #ff0000;
+  font-size:5rem;
+}
+
+.fa-file-pdf:hover {
+  -webkit-transition: 0.25s all;   
+  color: #ffffff;
+}
+
 @media (max-width : 700px) {
 
   html,
@@ -282,6 +333,9 @@ div ul.contact-links li {
 
   .disappear-mobile {
     display: none;
+  }
+.topnav {
+  backdrop-filter: none;
   }
 
   h1 {
@@ -328,10 +382,10 @@ div ul.contact-links li {
 ::-moz-selection {
   /* Code for Firefox */
   color: white;
-  background: rgb(52, 110, 255);
+  background: rgba(52, 110, 255, 0.82);
 }
 
 ::selection {
   color: white;
-  background: rgb(52, 110, 255);
+  background: rgba(52, 110, 255, 0.82);
 }

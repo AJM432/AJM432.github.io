@@ -2,7 +2,7 @@ var i = 0;
 var speed = 100;
 
 var prompt = 
-'<span>alvin@ASPEN-11</span>' +
+'<span>alvin@MacBook-Pro</span>' +
 '<span style="color: white">:</span>' + 
 '<span style="color: rgb(0, 102, 255)">~</span>' + 
 '<span style="color: white">$</span>'
