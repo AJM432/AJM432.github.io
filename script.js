@@ -1,5 +1,5 @@
 var i = 0;
-var speed = 100;
+var speed = 75;
 
 var prompt = 
 '<span>alvin@MacBook-Pro</span>' +

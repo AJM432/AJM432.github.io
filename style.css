@@ -29,11 +29,10 @@ body {
 
 .parallax {
   /* background-image: url("https://www.bhmpics.com/downloads/black-abstract-background-Wallpapers/22.3338286.jpg"); */
-  /* background-image: url("https://picjumbo.com/wp-content/uploads/dark-black-orange-3d-abstract-wallpaper-free-photo.jpg"); */
   /* background-image: url("https://images.unsplash.com/photo-1620121692029-d088224ddc74?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
-  /* background-image: url("https://images.unsplash.com/photo-1638272181967-7d3772a91265?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+  background-image: url("https://images.unsplash.com/photo-1638272181967-7d3772a91265?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   /* background-image: url("https://images.unsplash.com/photo-1637825891028-564f672aa42c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
-  background-image: url("https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  /* background-image: url("https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -72,7 +71,7 @@ h2 {
 #experience h3 {
   font-size: 1rem;
   font-weight: bold;
-  color: rgb(132, 71, 255);
+  color: rgb(89, 71, 255);
 }
 
 #projects h3 {
@@ -119,8 +118,11 @@ section p {
   background: rgb(93, 169, 255);
 }
 
-.topnav a:hover {
+.topnav a{
   -webkit-transition: 0.25s all;   
+}
+
+.topnav a:hover {
   transform: scale(1.10);
   color: var(--theme);
   background: black;
@@ -140,17 +142,22 @@ section p {
 }
 
 .nav-img:hover {
-  transform: scale(1.25);
+  transform:
+  perspective(100rem)
+  rotateX(4deg)
+  rotateY(16deg)
+  rotateZ(-10deg);
+  filter: drop-shadow(-10px 10px 2px #00c8ff);
 }
 
 .icon {
   cursor: pointer;
   margin: 20px 20px;
   z-index: 2;
+  transition: all 0.25s ease;
 }
 
 .icon:hover {
-  -webkit-transition: .25s all;   
   color: var(--theme);
 }
 
@@ -222,8 +229,11 @@ footer {
   display: none;
 }
 
-.project .bubble-container:hover {
+.project .bubble-container{
   -webkit-transition: .25s all;   
+}
+
+.project .bubble-container:hover {
   opacity: 0.75;
 }
 
@@ -310,13 +320,13 @@ div ul.contact-links li {
 }
 
 .fa-file-pdf {
+  transition: all 1s ease;
   margin: 20px;
-  color: #ff0000;
+  color: #6f59ff;
   font-size:5rem;
 }
 
 .fa-file-pdf:hover {
-  -webkit-transition: 0.25s all;   
   color: #ffffff;
 }
 
