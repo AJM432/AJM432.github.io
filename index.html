@@ -22,7 +22,8 @@
 <body onload="enterCommands()">
 
     <a href="/">
-        <img src="https://avatars.githubusercontent.com/u/49791407?v=4" alt="Logo AJM" class="nav-img icon" id="logo"></img>
+        <!-- <img src="https://avatars.githubusercontent.com/u/49791407?v=4" alt="Logo AJM" class="nav-img icon" id="logo"></img> -->
+        <img src="./A.png" alt="Logo AJM" class="nav-img icon" id="logo"></img>
     </a>
     <nav class="topnav" id="navbar">
         <a href="#about" class="nav-item disappear-mobile">About</a>
@@ -33,11 +34,9 @@
 
     <div class="parallax">
     <section id="about">
-        <div id="terminal-wrapper">
-        </div>
-
         <div>
-            <h1 id="name">
+            <br>
+            <h1 id="name" class="text-gradient">
                 Alvin Matthew
             </h1>
         </div>
@@ -45,32 +44,33 @@
         <p class="intro-summary" id="description">
             I am a student at the University of Waterloo majoring
             in computer engineering and have a strong interest in building projects. I am excited to seek out new
-            opportunities to learn and grow in my field.
+            opportunities to learn and grow in my field!
         </p>
+        <div id="terminal-wrapper">
+        </div>
     </section>
 
 <section id="experience">
     <div class="container">
-        <h1>Experience</h1>
+        <h1 class="text-gradient">Experience</h1>
+
+        <br>
+        <div class="experience-item">
+          <span>
+            <h3>QA/Technical Analyst Co-op @ Iotum</h3>
+            </span>
+            <p>Jan 2024 - Apr 2024</p>
+            <p>Developed a robust automated testing framework utilizing JavaScript and Selenium to identify errors within video conferencing software.</p>
+        </div>
+    
+        <br>
 
         <div class="experience-item">
-          <span style="color: rgb(49, 108, 245)">
+          <span">
             <h3>Pipeline Developer Co-op @ Rocket Science VFX</h3>
             </span>
             <p>May 2023 - Aug 2023</p>
-            <ul style="padding-left: 30px;">
-                <li>Built a robust video transcoding service incorporating the FFmpeg Python library cutting video upload times from
-10 to 1.5 minutes and was used upwards of 100 times per day resulting in 850 minutes of idle time saved daily</li>
-            <br>
-                <li>Launched a company-wide auto email system using the Python ShotGrid API for digital asset publishing which
-handled an average of 80 emails per day and was used by 120 employees</li>
-            <br>
-                <li>Managed 10-12 bug reports per week in a fast-paced development environment, ensuring swift resolution of software
-bugs</li>
-            <br>
-                <li>Decreased time spent on the timing and sequencing of digital assets by 60% by creating a custom tool that fully
-automated this process</li>
-            </ul>
+            <p>Developed and maintained a suite of VFX software tools using Python libraries and frameworks including PyQt, FFMpeg, and various computer graphics APIs which aided in the creation of digital assets and scenes.</p>
         </div>
 
     </div>
@@ -78,11 +78,23 @@ automated this process</li>
 
     <section id="projects">
 
-        <h1>
+        <h1 class="text-gradient">
             Projects
         </h1>
 
         <div class="project">
+            <div class="bubble-container">
+                <img src="https://github.com/AJM432/Solar-System-Simulator/assets/49791407/3852c4c3-14ae-4cd8-9c43-337554d73774" alt="Image">
+                <div class="project-content">
+                    <img src="https://github.com/AJM432/AJM432.github.io/assets/49791407/6db8ea27-6acb-4613-898f-41b80ef10c0a">
+                <br>
+                <p>Navigate the cosmos with this high-performance Barnes-Hut simulation. Accurately models thousands of stars forming a galaxy, guaranteeing an optimized celestial experience.</p>
+                </div>
+                    <a href="https://github.com/AJM432/Star-Swift">
+                        <i class="fab fa-github fa-2xl icon"></i>
+                    </a>
+            </div>
+        
             <div class="bubble-container">
                 <img src="https://user-images.githubusercontent.com/49791407/178154857-8f7ddbf2-ce2b-4cf7-83b7-dd323891ebdc.png" alt="Image">
                 <div class="project-content">
@@ -192,54 +204,43 @@ automated this process</li>
                         <i class="fab fa-github fa-2xl icon"></i>
                     </a>
             </div>
+            <h1 class="text-gradient">Math Projects</h1>
+
+            <div class="bubble-container">
+                <img src="https://github.com/AJM432/Math-Projects/assets/49791407/b19aa4ae-0cbd-468b-a25e-20318c492c55" alt="Image">
+                <div class="project-content">
+                <h3>Describing the Motion of a Line Segment Moving Along a Vertical Line</h3>
+                <br>
+                <p>This paper derives that \(\begin{cases}
+                    x=t+ \frac{L}{\sqrt{1+\left(\frac{F}{C-t}\right)^2}}\\
+                    y=\frac{F(x-t)}{C-t}
+                \end{cases}
+                t\in \mathbb{R},L \geq 0, C\neq t\) describes the motion of the line segment.</p>
+                <a href="https://github.com/AJM432/Math-Projects/blob/main/Motion-of-a-Line-Segment/Describing_the_Motion_of_a_Line_Segment.pdf">
+                    <i class="fa-solid fa-file-pdf"></i>
+                </a>
+                </div>
+                    <a href="https://github.com/AJM432/Math-Projects/blob/main/Motion-of-a-Line-Segment">
+                        <i class="fab fa-github fa-2xl icon"></i>
+                    </a>
+            </div>
+
+            <div class="bubble-container">
+                <img src="https://github.com/AJM432/Math-Projects/assets/49791407/8b015134-90c0-420d-a6f7-492b198bb560" alt="Image">
+                <div class="project-content">
+                <h3>Finding the Equation of a Curved Surface</h3>
+                <br>
+                <p>This paper derives that \(f(x) = x+\lambda -2\sqrt{x\lambda} \, x\in (0, \lambda)\) describes the shape of the curved surface.</p>
+                <a href="https://github.com/AJM432/Math-Projects/blob/main/Curved-Surface-Exploration/Curved_Surface_Exploration.pdf">
+                    <i class="fa-solid fa-file-pdf"></i>
+                </a>
+                </div>
+                    <a href="https://github.com/AJM432/Math-Projects/tree/main/Curved-Surface-Exploration">
+                        <i class="fab fa-github fa-2xl icon"></i>
+                    </a>
+            </div>
         </div>
 
-        <!-- <div class="img-gallery">
-            <a href="https://github.com/AJM432/Differential-Equation-Visualizer">
-                <img class="projectImage" src="https://user-images.githubusercontent.com/49791407/210035641-f62a010e-627c-4e4b-a758-2c360f1080b8.png"
-                    alt="Github Project"></img>
-            </a>
-
-            <a href="https://github.com/AJM432/Solar-Synesthesia">
-                <img class="projectImage" src="https://user-images.githubusercontent.com/49791407/210034549-7bfaa1bf-010d-4d73-9fed-8ce3aaf24121.png"
-                    alt="Github Project"></img>
-            </a>
-
-            <a href="https://github.com/AJM432/Solar-System-Simulator">
-                <img class="projectImage" src="https://user-images.githubusercontent.com/49791407/186054817-eafde350-7d1c-4bef-9ea4-9d9cf99cb190.png"
-                    alt="Github Project"></img>
-            </a>
-
-            <a href="https://github.com/AJM432/Interactive-Sorting-Algorithms">
-                <img class="projectImage" src="https://user-images.githubusercontent.com/49791407/186274074-e914364c-2f00-4714-b848-07bc9059eeb9.png"
-                    alt="Github Project"></img>
-            </a>
-
-            <a href="https://github.com/AJM432/Elastic-Collision-Simulation">
-                <img class="projectImage" src="https://user-images.githubusercontent.com/49791407/186037770-d505c44c-3725-43bd-ba46-d08035277255.png"
-                    alt="Github Project"></img>
-            </a>
-
-            <a href="https://github.com/AJM432/3d-Function-Grapher">
-                <img class="projectImage" src="https://user-images.githubusercontent.com/49791407/186008559-3df1f30c-fd2b-43e9-9b5a-d1902cfdab36.png"
-                    alt="Github Project"></img>
-            </a>
-
-            <a href="https://github.com/AJM432/Mandelbrot-Viewer">
-                <img class="projectImage" src="https://user-images.githubusercontent.com/49791407/185980134-1a7b4c4b-f68b-4e9a-abc9-f02ce9786bf1.png"
-                    alt="Github Project"></img>
-            </a>
-
-            <a href="https://github.com/AJM432/Discord-Bot">
-                <img class="projectImage" src="https://user-images.githubusercontent.com/49791407/185975164-4fa2c354-e457-4d10-8f5b-2feee0ad0cd7.png"
-                    alt="Github Project"></img>
-            </a>
-
-            <a href="https://github.com/AJM432/2048-Clone">
-                <img class="projectImage" src="https://user-images.githubusercontent.com/49791407/185968545-e9f75d85-5f66-4174-9906-5149101e06f0.png"
-                    alt="Github Project"></img>
-            </a>
-        </div> -->
 
     </section>
 
