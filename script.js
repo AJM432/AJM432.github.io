@@ -34,7 +34,7 @@ async function enterCommands() {
     showElement('description');
     document.getElementById("prompt3").style.display = "block";
     await typeWriter(' build -s navigation', 'terminal-navigation');
-    showElement('navbar', flex=true);
+    showElement('navbar');
     showElement('logo');
     document.getElementById("prompt4").style.display = "block";
 }
@@ -56,12 +56,13 @@ async function typeWriter(text, id) {
     });
 }
 
-function showElement(id, flex) {
+function showElement(id) {
     var x = document.getElementById(id);
-    if (flex) {
-        x.style.display = "flex";
-    }
+    // toggle show attribute
+    if (x.classList.contains("show")) {
+        x.classList.remove("show");
+      } 
     else {
-        x.style.display = "block";
+    x.classList.add("show");
     }
 }

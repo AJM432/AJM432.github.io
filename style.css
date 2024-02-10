@@ -90,7 +90,9 @@ section p {
 }
 
 .topnav {
-  display:none;
+  opacity: 0;
+  transition: opacity 1s;
+  display:flex;
   backdrop-filter: blur(0.5rem);
   padding-right: 10px;
   padding-bottom: 30px;
@@ -100,6 +102,9 @@ section p {
   height: 7vh;
   position: fixed;
   z-index: 1;
+}
+.topnav.show {
+  opacity: 1;
 }
 
 .nav-item {
@@ -125,7 +130,11 @@ section p {
 }
 
 #logo {
-  display: none;
+  opacity: 0;
+  transition: opacity 1s all 0.25s ease;
+}
+#logo.show {
+  opacity: 1;
 }
 
 .nav-img {
@@ -194,6 +203,7 @@ footer {
 
 #projects {
   padding: 1rem;
+  padding-top: 4rem;
 }
 
 #projects p{
@@ -222,7 +232,11 @@ footer {
 }
 
 #name, #description {
-  display: none;
+  opacity: 0;
+  transition: opacity 1s;
+}
+#name.show, #description.show {
+  opacity: 1;
 }
 
 .project .bubble-container{
