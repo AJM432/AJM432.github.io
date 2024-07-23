@@ -15,7 +15,7 @@ body {
   height: 100%;
   width: 100%;
   /* overflow: auto; */
-  font-family: 'Futura';
+  font-family: 'Futura', Arial, sans-serif;
   font-size: 18px;
   /* background-color: rgb(34, 33, 33); */
   background-color: rgb(0, 3, 68);
