@@ -1,5 +1,5 @@
 :root {
-  --theme: rgb(66, 120, 173);
+  --theme: rgb(87, 15, 255);
 }
 
 * {
@@ -15,7 +15,7 @@ body {
   height: 100%;
   width: 100%;
   /* overflow: auto; */
-  font-family: 'Futura', Arial, sans-serif;
+  font-family: 'Noto Sans Mono Bold', Arial, sans-serif;
   font-size: 18px;
   /* background-color: rgb(34, 33, 33); */
   background-color: rgb(0, 3, 68);
@@ -67,7 +67,8 @@ h2 {
 #experience h3 {
   font-size: 1rem;
   font-weight: bold;
-  color: rgb(89, 71, 255);
+  /*color: rgb(89, 71, 255);*/
+  color: var(--theme);
 }
 
 #projects h3 {
@@ -81,6 +82,7 @@ h2 {
   color: rgb(255, 255, 255);
   line-height: 2;
   text-align: left;
+  font-weight: normal;
 }
 
 section p {
@@ -102,6 +104,7 @@ section p {
   height: 7vh;
   position: fixed;
   z-index: 1;
+  font-weight: bold;
 }
 .topnav.show {
   opacity: 1;
@@ -116,7 +119,8 @@ section p {
   align-items: center;
   color: rgb(0, 0, 0);
   border-radius: 15px;
-  background: rgb(93, 169, 255);
+  /*background: rgb(93, 169, 255);*/
+  background: var(--theme);
 }
 
 .topnav a{
@@ -211,13 +215,14 @@ footer {
 }
 
 #terminal-wrapper {
-  line-height: 2;
-  font-family: 'Ubuntu';
+  line-height: 1.75;
+  font-family: 'Noto Sans Mono';
   color: lime;
+  background-color: #001524;
   border-radius: 10px;
-  background-color: #300A24;
   border-style: solid;
-  border-color: gray;
+  border-width: 2px;
+  border-color: #00fff3;
   padding: 10px;
   margin: 10px;
 }
