@@ -46,7 +46,7 @@ body {
 
 .text-gradient{
   /* user-select: none; */
-  background-image: linear-gradient(to right, rgb(58, 0, 255), rgb(251, 199, 255));
+  background-image: linear-gradient(to right, rgb(255, 102, 0), rgb(255, 255, 161));
   background-size: 100%;
   background-repeat: repeat;
   -webkit-background-clip: text;
@@ -72,8 +72,8 @@ h2 {
 #experience h3 {
   font-size: 1.15rem;
   font-weight: bold;
-  /*color: rgb(89, 71, 255);*/
-  color: var(--theme);
+  color: rgb(255, 159, 99);
+  /* color: var(--theme); */
 }
 
 #projects h3 {
@@ -133,7 +133,7 @@ section p {
 
 .topnav a:hover {
   transform: scale(1.10);
-  color: rgb(230, 0, 255);
+  color: rgb(255, 131, 54);
   background: black;
 }
 
