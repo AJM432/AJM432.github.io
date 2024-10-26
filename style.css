@@ -15,8 +15,13 @@ body {
   height: 100%;
   width: 100%;
   /* overflow: auto; */
-  font-family: 'Noto Sans Mono Bold', Arial, sans-serif;
-  font-size: 18px;
+
+
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: bolder;
+
   /* background-color: rgb(34, 33, 33); */
   background-color: rgb(0, 3, 68);
   color: rgb(255, 255, 255);
@@ -41,7 +46,7 @@ body {
 
 .text-gradient{
   /* user-select: none; */
-  background-image: linear-gradient(to right, rgb(98, 0, 255), rgb(221, 199, 255));
+  background-image: linear-gradient(to right, rgb(58, 0, 255), rgb(251, 199, 255));
   background-size: 100%;
   background-repeat: repeat;
   -webkit-background-clip: text;
@@ -50,7 +55,7 @@ body {
 
 h1 {
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 3.5rem;
   /* font-weight: normal; */
   color: var(--theme);
   margin: 1 auto;
@@ -65,7 +70,7 @@ h2 {
 }
 
 #experience h3 {
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: bold;
   /*color: rgb(89, 71, 255);*/
   color: var(--theme);
@@ -82,7 +87,6 @@ h2 {
   color: rgb(255, 255, 255);
   line-height: 2;
   text-align: left;
-  font-weight: normal;
 }
 
 section p {
@@ -117,7 +121,7 @@ section p {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   border-radius: 15px;
   /*background: rgb(93, 169, 255);*/
   background: var(--theme);
@@ -129,7 +133,7 @@ section p {
 
 .topnav a:hover {
   transform: scale(1.10);
-  color: var(--theme);
+  color: rgb(230, 0, 255);
   background: black;
 }
 
@@ -216,7 +220,7 @@ footer {
 
 #terminal-wrapper {
   line-height: 1.75;
-  font-family: 'Noto Sans Mono';
+  /*font-family: 'Noto Sans Mono';*/
   color: lime;
   background-color: #001524;
   border-radius: 10px;
