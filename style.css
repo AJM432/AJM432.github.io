@@ -20,7 +20,7 @@ body {
   font-family: "Fira Code", monospace;
   font-optical-sizing: auto;
   font-weight: 500;
-  font-style: bolder;
+  font-style: bold;
 
   /* background-color: rgb(34, 33, 33); */
   background-color: rgb(0, 3, 68);
@@ -206,6 +206,7 @@ footer {
 
 #experience {
   padding: 4rem;
+  margin-top: 20rem;
   /* padding-top: 0rem; */
 }
 
@@ -228,7 +229,7 @@ footer {
   border-width: 2px;
   border-color: #00fff3;
   padding: 10px;
-  margin: 10px;
+  margin: 1rem;
 }
 #terminal-wrapper div:last-child::after {
   color: white;
@@ -347,6 +348,12 @@ div ul.contact-links li {
 
 .fa-file-pdf:hover {
   color: #ffffff;
+}
+
+@media (max-width : 500px) {
+  #about {
+    justify-content: start;
+  }
 }
 
 @media (max-width : 700px) {
