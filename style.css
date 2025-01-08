@@ -1,5 +1,6 @@
 :root {
   --theme: rgb(112, 51, 255);
+  --globalPadding: 1rem;
 }
 
 * {
@@ -179,7 +180,8 @@ section p {
   align-items: left;
   justify-content: center;
   height: 100vh;
-  padding: 4rem;
+  padding: var(--globalPadding);
+  padding-top: 4rem;
   padding-bottom: 0rem;
 }
 
@@ -204,13 +206,13 @@ footer {
 }
 
 #experience {
-  padding: 4rem;
+  padding: var(--globalPadding);
   margin-top: 20rem;
   /* padding-top: 0rem; */
 }
 
 #projects {
-  padding: 1rem;
+  padding: var(--globalPadding);
   padding-top: 4rem;
 }
 
