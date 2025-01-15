@@ -1,6 +1,6 @@
 :root {
   --theme: rgb(112, 51, 255);
-  --globalPadding: 6rem;
+  --globalPadding: 1rem;
 }
 
 * {
@@ -10,11 +10,10 @@
 
 html,
 body {
-  min-height: 100%;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  height: auto;
+  height: 100%;
   width: 100%;
   /* overflow: auto; */
 
@@ -24,8 +23,8 @@ body {
   font-weight: 500;
   font-style: bold;
 
-  background: rgb(2, 0, 36);
-  background: linear-gradient(132deg, rgba(2, 0, 36, 1) 0%, rgba(12, 0, 31, 1) 16%, rgba(59, 0, 143, 1) 100%);
+  /* background-color: rgb(34, 33, 33); */
+  background-color: rgb(0, 3, 68);
   color: rgb(255, 255, 255);
 }
 
@@ -367,11 +366,6 @@ div ul.contact-links li {
 }
 
 @media (max-width : 1000px) {
-
-  :root {
-    --theme: rgb(112, 51, 255);
-    --globalPadding: 1rem;
-  }
 
   html,
   body {
