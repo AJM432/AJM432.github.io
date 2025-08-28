@@ -284,6 +284,15 @@ footer {
   background-color: black;
 }
 
+.experience-item {
+  background-color: #000000;
+  padding: 20px;
+  margin-right: 40px;
+  margin-left: 40px;
+  border-radius: 20px;
+  filter: drop-shadow(-7px 7px 2px #232323);
+}
+
 .bubble-container {
   background-color: #2d2d2d;
   padding: 20px;
